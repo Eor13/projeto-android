@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/*Estrutura Base*/
+
+@font-face {
+    font-family:'idroid';
+    src: url('fontes/idroid.otf') format('Opentype');
+}
+:root{
+    --cor0: #D0EFDE;
+    --cor1: #C5EBD6;
+    --cor2: #84E1AD;
+    --cor3: #3CD983;
+    --cor4: #497D60;
+    --cor5: #286643;
+    --cor6: #185233;
+    --cor7: #2FA866;
+    --cor8: #1A5C38;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-sarif;
+    --fonte-destaque: 'Bebas Neve', cursive;
+    --fonte-android: 'idroid', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color:var(--cor2);
+    text-align: justify;
+    
+}
+
+/*=======================================cabeçalho===============================================*/
+#cabecalho{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    min-height: 150px;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-shadow: 5px 1px 4px rgba(0, 0, 0, 0.5);
+}
+#cabecalho > P{
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    max-width: 500px;
+    font-size:1.01em;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*==================================Menu de Navegação==============================================*/
+nav{
+    background-color: var(--cor6);
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+nav > a{
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.em;
+    transition-duration: 0.5s; /* tempo de Transição*/
+
+}
+nav >a:hover{
+    background-color: var(--cor0);
+    color: var(--cor6);
+    border-radius: 5px;
+}
+
+/* =============================Corpo====================================*/
+.forte{
+    color:var(--cor4);
+    font-weight: bold;
+}
+main a{
+    background-color: var(--cor2);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+main a::after{
+    content:'\00A0\1F517';
+}
+main a:hover{
+    text-decoration: underline;
+    background-color: var(--cor0);
+
+}
+.titulo{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-size: 2em;
+}
+h2.titulo{
+    background-image: linear-gradient(to right,var(--cor0), transparent );
+    font-size: 1.6em;
+    text-indent: 8px;
+}
+main{
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 800px;
+    min-width: 320px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main p{
+    text-indent: 30px;
+    margin: 15px 0px;
+    font-size: 1em;
+    line-height: 2em;
+}
+/*================imagens==========*/
+#imagem{
+    display: block;
+    margin:auto;
+    max-width: 350px;
+}
+.imagem{
+    display: block;
+    width: 100%;
+}
+/*================video==========*/
+#video{
+    background-color: var(--cor6);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+#video > iframe{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height: 90%;
+}
+/*===============Periféricos================*/
+#homenagem{
+    background-color:var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:1px 1px 6px 2px rgba(0, 0, 0, 0.43); 
+}
+h3#saibamais{
+    background-color: var(--cor7);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+}
+ul.lista{
+    list-style-type:url(imagens/certo.gif);
+    columns: 2;
+    list-style-position: inside;
+}
+
+/*====================================Rodapé====================================*/
+footer{
+    background-color:var(--cor8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 2px 6px;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
