@@ -4,7 +4,7 @@
 
 @font-face {
     font-family:'idroid';
-    src: url('fontes/idroid.otf') format('Opentype');
+    src: url('src/fontes/idroid.otf') format('Opentype');
 }
 :root{
     --cor0: #D0EFDE;
@@ -163,6 +163,11 @@ ul.lista{
     list-style-type:url(imagens/certo.gif);
     columns: 2;
     list-style-position: inside;
+}
+@media(max-width:510px){
+    .bug{
+        width: 150px;
+    }
 }
 
 /*====================================Rodapé====================================*/
